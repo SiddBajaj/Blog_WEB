@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Modern Blog Design System - Professional aesthetic with blues and purples */
+
+@layer base {
+  :root {
+    /* Core Background Colors */
+    --background: 210 40% 98%;
+    --foreground: 222 84% 5%;
+
+    /* Card System */
+    --card: 0 0% 100%;
+    --card-foreground: 222 84% 5%;
+    --card-hover: 210 40% 96%;
+
+    /* Primary Brand Colors - Deep Ocean Blue */
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 217 91% 55%;
+
+    /* Secondary Colors - Modern Gray */
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222 47% 11%;
+
+    /* Muted Colors */
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+
+    /* Accent Colors - Purple Touch */
+    --accent: 262 83% 58%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Destructive Colors */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Border and Input */
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 217 91% 60%;
+
+    /* Design System Values */
+    --radius: 0.75rem;
+
+    /* Blog-specific Design Tokens */
+    --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%), hsl(262 83% 58%));
+    --gradient-subtle: linear-gradient(180deg, hsl(210 40% 98%), hsl(0 0% 100%));
+    --gradient-card: linear-gradient(135deg, hsl(0 0% 100%), hsl(210 40% 98%));
+    
+    /* Shadows */
+    --shadow-sm: 0 2px 4px -1px hsl(214 32% 91% / 0.1);
+    --shadow-md: 0 8px 16px -4px hsl(214 32% 91% / 0.1), 0 4px 8px -2px hsl(214 32% 91% / 0.06);
+    --shadow-lg: 0 16px 32px -8px hsl(214 32% 91% / 0.1), 0 8px 16px -4px hsl(214 32% 91% / 0.06);
+    --shadow-glow: 0 0 40px hsl(217 91% 60% / 0.15);
+
+    /* Typography */
+    --font-heading: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-fast: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
+    /* Core Background Colors */
+    --background: 225 71% 8%;
+    --foreground: 213 31% 91%;
+
+    /* Card System */
+    --card: 224 71% 12%;
+    --card-foreground: 213 31% 91%;
+    --card-hover: 225 71% 15%;
+
+    /* Primary Brand Colors - Brighter in dark mode */
+    --primary: 217 91% 70%;
+    --primary-foreground: 224 71% 12%;
+    --primary-hover: 217 91% 75%;
+
+    /* Secondary Colors */
+    --secondary: 215 27% 17%;
+    --secondary-foreground: 213 31% 91%;
+
+    /* Muted Colors */
+    --muted: 215 27% 17%;
+    --muted-foreground: 217 10% 64%;
+
+    /* Accent Colors */
+    --accent: 262 83% 68%;
+    --accent-foreground: 224 71% 12%;
+
+    /* Destructive Colors */
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 213 31% 91%;
+
+    /* Border and Input */
+    --border: 215 27% 17%;
+    --input: 215 27% 17%;
+    --ring: 217 91% 70%;
+
+    /* Blog-specific Design Tokens for Dark Mode */
+    --gradient-primary: linear-gradient(135deg, hsl(217 91% 70%), hsl(262 83% 68%));
+    --gradient-subtle: linear-gradient(180deg, hsl(225 71% 8%), hsl(224 71% 12%));
+    --gradient-card: linear-gradient(135deg, hsl(224 71% 12%), hsl(215 27% 17%));
+    
+    /* Shadows for Dark Mode */
+    --shadow-sm: 0 2px 4px -1px hsl(0 0% 0% / 0.3);
+    --shadow-md: 0 8px 16px -4px hsl(0 0% 0% / 0.3), 0 4px 8px -2px hsl(0 0% 0% / 0.2);
+    --shadow-lg: 0 16px 32px -8px hsl(0 0% 0% / 0.3), 0 8px 16px -4px hsl(0 0% 0% / 0.2);
+    --shadow-glow: 0 0 40px hsl(217 91% 70% / 0.25);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
